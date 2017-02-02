@@ -1,0 +1,86 @@
+/* line 4, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+#computer {
+  background-color: #464646; }
+  /* line 6, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+  #computer:hover {
+    background-color: #606060; }
+
+/* line 14, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+#wrapper .home-button {
+  pointer-events: all; }
+
+@media (max-width: 768px) {
+  /* line 19, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+  #wrapper.toggled .home-button {
+    pointer-events: none; } }
+
+/* line 30, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+.image-box .link-image {
+  width: 100%;
+  height: auto; }
+
+/* line 34, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+.image-box .overlay {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  position: absolute;
+  width: calc(100% - (2 * 5px));
+  height: calc(100% - (2 * 5px));
+  top: 5px;
+  left: 5px; }
+  @media (max-width: 768px) {
+    /* line 34, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+    .image-box .overlay {
+      -webkit-box-shadow: 0px 0px 203px black inset;
+      -moz-box-shadow: 0px 0px 203px black inset;
+      -o-box-shadow: 0px 0px 203px black inset;
+      box-shadow: 0px 0px 203px black inset; } }
+  @media (min-width: 768px) {
+    /* line 34, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+    .image-box .overlay {
+      width: calc(100% - (2 * 30px));
+      height: calc(100% - (2 * 30px));
+      top: 30px;
+      left: 30px; } }
+
+/* line 51, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+.image-box .link-title {
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: darkgrey;
+  font-size: 2.3em;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  opacity: 0; }
+  @media (min-width: 768px) {
+    /* line 51, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+    .image-box .link-title {
+      bottom: 25px;
+      right: 40px; } }
+  @media (min-width: 992px) {
+    /* line 51, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+    .image-box .link-title {
+      font-size: 3em; } }
+  @media (max-width: 768px) {
+    /* line 51, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+    .image-box .link-title {
+      font-size: 3em;
+      opacity: 1; } }
+
+/* line 73, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+.image-box:hover .link-title {
+  opacity: 1; }
+
+/* line 76, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/computer.scss */
+.image-box:hover .overlay {
+  -webkit-box-shadow: 0px 0px 203px black inset;
+  -moz-box-shadow: 0px 0px 203px black inset;
+  -o-box-shadow: 0px 0px 203px black inset;
+  box-shadow: 0px 0px 203px black inset; }
+
+/*# sourceMappingURL=computer.css.map */

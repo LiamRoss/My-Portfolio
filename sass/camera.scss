@@ -1,0 +1,24 @@
+@import 'variables';
+
+// the current menu item
+#camera {
+  background-color: $selected-color;
+  &:hover {
+    background-color: lighten($selected-color, 10%)
+  }
+}
+
+// deactivate buttons while mobile menu is open, so that you can
+// click off of menu to close without going through links
+#wrapper {
+  .home-button {
+    pointer-events: all;
+  }
+  &.toggled {
+    @media(max-width: 768px) {
+      .home-button {
+        pointer-events: none;
+      }
+    }
+  }
+}

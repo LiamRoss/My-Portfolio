@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "file": "aboutme.css",
+  "sources": [
+    "aboutme.scss",
+    "variables.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAGA,QAAQ,CAAC;EACP,gBAAgB,ECaD,OAAI,GDdX;;EAEP,QAAQ,AAAA,MAAM,CAAP;IACN,gBAAgB,EAAE,OAAO,GADlB;;;AAQT,QAAQ,CAAC,YAAY,CAAR;EACX,cAAc,EAAE,GAAI,GADR;;AAIZ,MAAM,EAAL,SAAS,EAAE,KAAK;;EACf,QAAQ,AAAA,QAAQ,CAAC,YAAY,CAAhB;IACX,cAAc,EAAE,IAAK,GADT",
+  "names": []
+}

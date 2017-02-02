@@ -1,0 +1,70 @@
+/* line 4, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  /* line 21, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+  #wrapper #navbar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 200px;
+    width: 0;
+    height: 100%;
+    margin-left: -200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+  /* line 36, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+  #wrapper #page-content-wrapper {
+    width: 100%;
+    position: absolute; }
+  /* line 44, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+  #wrapper.toggled {
+    padding-left: 200px; }
+    /* line 49, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+    #wrapper.toggled #navbar-wrapper {
+      width: 200px; }
+    /* line 55, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+    #wrapper.toggled #page-content-wrapper {
+      position: absolute;
+      margin-right: -200px; }
+
+/* line 67, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  /* line 74, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+  .sidebar-nav > .sidebar-brand {
+    height: auto; }
+  /* line 78, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+  .sidebar-nav li a {
+    display: block;
+    font-size: 1.0em;
+    font-style: normal;
+    text-decoration: none;
+    color: #E7E7E7;
+    padding: 10px; }
+    /* line 85, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+    .sidebar-nav li a #logo-image {
+      height: auto;
+      width: 120px; }
+    /* line 90, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+    .sidebar-nav li a.menu-item:hover {
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.2); }
+    /* line 95, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/navbar.scss */
+    .sidebar-nav li a.menu-item:active,
+    .sidebar-nav li a.menu-item:focus {
+      text-decoration: none; }
+
+/*# sourceMappingURL=navbar.css.map */

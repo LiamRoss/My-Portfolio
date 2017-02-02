@@ -1,0 +1,115 @@
+@import 'variables';
+// the default font for the document
+body {
+  font-family: $font-stack;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+
+// use this if you want widgit to have space around the outside
+.col-padding {
+  padding: $space-mobile;
+  @media only screen and (min-width: 768px) {
+    padding: $space-ends $space-sides $space-ends $space-sides;
+  }
+  max-height: 100%;
+}
+
+// remove bootstrap custom margins within rows
+.row {
+  margin: 0px;
+  height: 100%;
+}
+
+#menu-toggle {
+//  @media only screen and (min-width: 768px) {
+//    display: none;
+//  }
+}
+
+// the main page that surrounds the unique internals
+#wrapper {
+  #main-page {
+    background-color: $main-color;
+    pointer-events: all;
+    float: left;
+    height: auto;
+    min-height: calc(100vh - 52px);
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    @media only screen and (min-width: 768px) {
+      height: calc(100vh - 50px);
+      width: 100%;
+      overflow: auto;
+      padding-top: $space-ends;
+      padding-bottom: $space-ends;
+      // keeps the widgit the same distance from sides of container as top
+      padding-left: 2 * $space-ends - $space-sides;
+      padding-right: 2 * $space-ends - $space-sides;
+    }
+  }
+//  &.toggled {
+//    #main-page {
+//      @media(max-width: 768px) {
+//        pointer-events: none;
+//      }
+//    }
+//  }
+}
+
+// contains navigation buttons, collapses menu etc
+#icon-bar {
+  background-color: $icon-bar-color;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $icon-border;
+  height: $icon-bar-height;
+  padding: 5px;
+  margin: 0;
+  position: fixed;
+  z-index: 999999;
+  #page-path {
+    //    color: lighten($sidebar-color, 10%);
+    color: $sidebar-color;
+    font-size: 1.8em;
+    float: right;
+    margin-right: 10px;
+  }
+  // buttons within icon-bar, currently applies to menu collapse button
+  a {
+    background-color: transparent;
+    border-style: none;
+    padding: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100%;
+    width: 38px;
+    font-size: 24px;
+    color: lighten($sidebar-color, 10%);
+    @media only screen and (min-width: 768px) {
+      //      display: none;
+    }
+    &:hover {
+      color: $sidebar-color;
+    }
+  }
+  @media only screen and (min-width: 768px) {
+    position: static;
+  }
+}
+
+// outer container for when icon-bar becomes fixed (stops page from jumping)
+#dash-nav {
+  min-height: $icon-bar-height;
+  @media only screen and (min-width: 768px) {
+    min-height: auto;
+  }
+}
+
+#design-box {
+  display: none;
+}

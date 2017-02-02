@@ -1,0 +1,17 @@
+/* line 4, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/camera.scss */
+#camera {
+  background-color: #464646; }
+  /* line 6, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/camera.scss */
+  #camera:hover {
+    background-color: #606060; }
+
+/* line 14, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/camera.scss */
+#wrapper .home-button {
+  pointer-events: all; }
+
+@media (max-width: 768px) {
+  /* line 19, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/camera.scss */
+  #wrapper.toggled .home-button {
+    pointer-events: none; } }
+
+/*# sourceMappingURL=camera.css.map */

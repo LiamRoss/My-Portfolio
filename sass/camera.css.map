@@ -1,0 +1,11 @@
+{
+  "version": 3,
+  "file": "camera.css",
+  "sources": [
+    "camera.scss",
+    "variables.scss"
+  ],
+  "sourcesContent": [],
+  "mappings": ";AAGA,OAAO,CAAC;EACN,gBAAgB,ECaD,OAAI,GDdZ;;EAEN,OAAO,AAAA,MAAM,CAAN;IACN,gBAAgB,EAAE,OAAO,GADlB;;;AAQT,QAAQ,CAAC,YAAY,CAAR;EACX,cAAc,EAAE,GAAI,GADR;;AAIZ,MAAM,EAAL,SAAS,EAAE,KAAK;;EACf,QAAQ,AAAA,QAAQ,CAAC,YAAY,CAAhB;IACX,cAAc,EAAE,IAAK,GADT",
+  "names": []
+}

@@ -1,0 +1,71 @@
+// navbar:
+//
+// sidebar width
+$sidebar-width: 200px;
+//
+// navbar background color
+//$sidebar-color: #2A3F54;
+$sidebar-color: rgba(0, 0, 0, 0.8);
+//
+// sidebar font color
+$sidebar-font-color: #E7E7E7;
+//
+// sidebar hover color
+$sidebar-hover: rgba(255, 255, 255, 0.2);
+//
+// selected menu item color
+//$selected-color: #b35900;
+$selected-color: rgba(70, 70, 70, 1);
+//
+// transition mixin
+@mixin transitions($property, $duration, $timing-function) {
+  -webkit-transition: $property $duration $timing-function;
+  -moz-transition: $property $duration $timing-function;
+  -o-transition: $property $duration $timing-function;
+  transition: $property $duration $timing-function;
+}
+//
+// box shadow mixin
+@mixin box-shadow($top, $left, $blur, $spread, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  -o-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+
+//
+// main:
+//
+// font family
+$font-stack: "Helvetica Neue",
+Roboto,
+Arial,
+"Droid Sans",
+sans-serif;
+//
+// padding around widgits --> gap between them
+//// space when in mobile view
+$space-mobile: 5px;
+//// space on top and bottom
+$space-ends: 30px;
+//// space on sides
+$space-sides: 30px;
+//
+// widgit background color
+$widgit-color: rgb(255, 255, 255);
+//
+// main page background color
+$main-color: rgb(247, 247, 247);
+//
+// icon-bar background color
+$icon-bar-color: rgb(237, 237, 237);
+//
+// icon-bar border color
+$icon-border: rgb(217, 222, 228);
+//
+// height of icon-bar
+$icon-bar-height: 50px;
+//
+// height of infographs
+$info-height: 150px;
+//

@@ -1,0 +1,101 @@
+@import 'variables';
+
+// wrapper styling
+#wrapper {
+  padding-left: 0;
+  @include transitions(all, 0.5s, ease);
+//  @media(min-width: 768px) {
+//    padding-left: $sidebar-width;
+//  }
+//  #main-cover {
+//    width: 100%;
+//    height: 100%;
+//    color: black;
+//    position: absolute;
+//    margin-top: (-$space-ends);
+//    margin-bottom: (-$space-ends);
+//    // keeps the widgit the same distance from sides of container as top
+//    margin-left: (-(2 * $space-ends - $space-sides));
+//    margin-right: (-(2 * $space-ends - $space-sides));
+//  }
+  #navbar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: $sidebar-width;
+    width: 0;
+    height: 100%;
+    margin-left: (-$sidebar-width);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: $sidebar-color;
+    @include transitions(all, 0.5s, ease);
+//    @media(min-width: 768px) {
+//      width: $sidebar-width;
+//    }
+  }
+  #page-content-wrapper {
+    width: 100%;
+    position: absolute;
+//    @media(min-width: 768px) {
+//      position: relative;
+//    }
+  }
+  // wrapper.toggled (menu is closed on computer and open on phone)
+  &.toggled {
+    padding-left: $sidebar-width;
+//    @media(min-width: 768px) {
+//      padding-left: 0;
+//    }
+    #navbar-wrapper {
+      width: $sidebar-width;
+//      @media(min-width: 768px) {
+//        width: 0;
+//      }
+    }
+    #page-content-wrapper {
+      position: absolute;
+      margin-right: (-$sidebar-width);
+//      @media(min-width: 768px) {
+//        position: relative;
+//        margin-right: 0;
+//      }
+    }
+  }
+}
+
+// sidebar styling
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: $sidebar-width;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  &> .sidebar-brand {
+    height: auto;
+  }
+  li {
+    a {
+      display: block;
+      font-size: 1.0em;
+      font-style: normal;
+      text-decoration: none;
+      color: $sidebar-font-color;
+      padding: 10px;
+      #logo-image {
+        height: auto;
+        width: 120px;
+      }
+      &.menu-item {
+        &:hover {
+          text-decoration: none;
+          background: $sidebar-hover;
+        }
+        &:active,
+        &:focus {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+/* line 3, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+body {
+  font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden; }
+
+/* line 10, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+.col-padding {
+  padding: 5px;
+  max-height: 100%; }
+  @media only screen and (min-width: 768px) {
+    /* line 10, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+    .col-padding {
+      padding: 30px 30px 30px 30px; } }
+
+/* line 19, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+.row {
+  margin: 0px;
+  height: 100%; }
+
+/* line 32, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+#wrapper #main-page {
+  background-color: #f7f7f7;
+  pointer-events: all;
+  float: left;
+  height: auto;
+  min-height: calc(100vh - 52px);
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0; }
+  @media only screen and (min-width: 768px) {
+    /* line 32, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+    #wrapper #main-page {
+      height: calc(100vh - 50px);
+      width: 100%;
+      overflow: auto;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-left: 30px;
+      padding-right: 30px; } }
+
+/* line 64, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+#icon-bar {
+  background-color: #ededed;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d9dee4;
+  height: 50px;
+  padding: 5px;
+  margin: 0;
+  position: fixed;
+  z-index: 999999; }
+  /* line 75, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+  #icon-bar #page-path {
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 1.8em;
+    float: right;
+    margin-right: 10px; }
+  /* line 83, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+  #icon-bar a {
+    background-color: transparent;
+    border-style: none;
+    padding: 7px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 100%;
+    width: 38px;
+    font-size: 24px;
+    color: rgba(26, 26, 26, 0.8); }
+    /* line 96, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+    #icon-bar a:hover {
+      color: rgba(0, 0, 0, 0.8); }
+  @media only screen and (min-width: 768px) {
+    /* line 64, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+    #icon-bar {
+      position: static; } }
+
+/* line 106, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+#dash-nav {
+  min-height: 50px; }
+  @media only screen and (min-width: 768px) {
+    /* line 106, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+    #dash-nav {
+      min-height: auto; } }
+
+/* line 113, C:/Users/Liam/Dropbox/Web Design/Liam's Portfolio Site/sass/main.scss */
+#design-box {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */
